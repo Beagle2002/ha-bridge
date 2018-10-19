@@ -1202,7 +1202,7 @@ public class HueMulator {
 			}
 		}
 		
-		if(isOnRequest) {
+		if(isOnRequest && !isDimRequest) {
 			log.debug("Calling on-off as requested.");
 			if (theStateChanges.isOn()) {
 				url = device.getOnUrl();
